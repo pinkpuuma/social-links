@@ -1,11 +1,90 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { Image } from 'astro:assets';
+// import Button from '../components/Button.astro'
+import avatar from '../assets/puma-avatar.png';
 ---
 
 <Layout>
-	<Welcome />
+  <div class="flex flex-col items-center gap-4
+              w-[327px] h-570[px] p-[24px]
+              md:w-[384px] h-[611px] p-[40px]
+              lg:w-[384px] h-[611px] p-[40px]
+              bg-grey rounded-[12px]">
+    <Image src={avatar} alt="Pink Puuma avatar" class="rounded-full w-[88px] h-[88px]" />
+    <h1 class="text-stone-50 font-bold">pinkpuuma</h1>
+    <p class="text-green font-bold">Earth</p>
+    <p class="text-stone-50 text[14px]">"Front-end developer. Guitarist."</p>
+    <a href="https://github.com/pinkpuuma"
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="flex items-center justify-center 
+              w-[297px] h-[45px]
+              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold font-bold rounded-[8px]
+              transition duration-500 ease-in-out
+              cursor-pointer">
+        GitHub
+      </a>
+    <a href="https://www.reddit.com/user/pinkpuuma/"
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="flex items-center justify-center 
+              w-[297px] h-[45px]
+              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
+              transition duration-500 ease-in-out
+              cursor-pointer">
+        Reddit
+      </a>
+    <a href="https://www.frontendmentor.io/profile/pinkpuuma"
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="flex items-center justify-center 
+              w-[297px] h-[45px]
+              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
+              transition duration-500 ease-in-out
+              cursor-pointer">
+        Frontend Mentor
+      </a>
+    <a href="https://www.linkedin.com/"
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="flex items-center justify-center 
+              w-[297px] h-[45px]
+              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
+              transition duration-500 ease-in-out
+              cursor-pointer">
+        Linkedin
+      </a>
+    <a href="https://google.com/"
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="flex items-center justify-center 
+              w-[297px] h-[45px]
+              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
+              transition duration-500 ease-in-out
+              cursor-pointer">
+        Website
+      </a>
+  </div>
+
+  <footer>
+    <div>
+      <p class="mt-[16px] text-[15px] text-center text-stone-50">
+        Challenge by
+        <a 
+          href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="font-bold text-green"
+        >Frontend Mentor</a>. 
+        Coded by
+        <a 
+          href="https://github.com/pinkpuuma?tab=repositories" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="font-bold text-green"
+        >pinkpuuma</a>.
+      </p>
+    </div>
+  </footer>
 </Layout>
