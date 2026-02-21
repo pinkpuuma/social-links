@@ -1,89 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-// import Button from '../components/Button.astro'
 import avatar from '../assets/puma-avatar.png';
+import Button from '../components/Button.astro';
 ---
 
 <Layout>
   <div class="flex flex-col items-center gap-4
-              w-[327px] h-570[px] p-[24px]
-              md:w-[384px] h-[611px] p-[40px]
-              lg:w-[384px] h-[611px] p-[40px]
-              bg-grey rounded-[12px]">
-    <Image src={avatar} alt="Pink Puuma avatar" class="rounded-full w-[88px] h-[88px]" />
-    <h1 class="text-stone-50 font-bold">pinkpuuma</h1>
-    <p class="text-green font-bold">Earth</p>
-    <p class="text-stone-50 text[14px]">"Front-end developer. Guitarist."</p>
-    <a href="https://github.com/pinkpuuma"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="flex items-center justify-center 
-              w-[297px] h-[45px]
-              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold font-bold rounded-[8px]
-              transition duration-500 ease-in-out
-              cursor-pointer">
-        GitHub
-      </a>
-    <a href="https://www.reddit.com/user/pinkpuuma/"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="flex items-center justify-center 
-              w-[297px] h-[45px]
-              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
-              transition duration-500 ease-in-out
-              cursor-pointer">
-        Reddit
-      </a>
-    <a href="https://www.frontendmentor.io/profile/pinkpuuma"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="flex items-center justify-center 
-              w-[297px] h-[45px]
-              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
-              transition duration-500 ease-in-out
-              cursor-pointer">
-        Frontend Mentor
-      </a>
-    <a href="https://www.linkedin.com/"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="flex items-center justify-center 
-              w-[297px] h-[45px]
-              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
-              transition duration-500 ease-in-out
-              cursor-pointer">
-        Linkedin
-      </a>
-    <a href="https://google.com/"
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="flex items-center justify-center 
-              w-[297px] h-[45px]
-              bg-light-grey text-stone-50 hover:bg-green hover:text-black font-bold rounded-[8px]
-              transition duration-500 ease-in-out
-              cursor-pointer">
-        Website
-      </a>
+              bg-base rounded-xl p-8 mx-4">
+    <Image src={avatar} alt="Pink Puuma avatar" class="rounded-full w-[7rem] h-[7rem]" />
+    <h1 class="text-primary text-xl font-bold">pinkpuuma</h1>
+    <div class="flex items-center">
+      <i class="fa-solid fa-location-dot text-primary pr-2"></i>
+      <p class="text-secondary font-bold text-lg">Earth</p>
+    </div>
+    <p class="text-text text-md">"Front-end developer. BJJ Enthusiast. Guitarist."</p>
+
+    <Button
+        url="https://github.com/pinkpuuma"
+        label="GitHub"
+    />
+    <Button
+        url="https://www.reddit.com/user/pinkpuuma/"
+        label="Reddit"
+    />
   </div>
 
   <footer>
     <div>
-      <p class="mt-[16px] text-[15px] text-center text-stone-50">
-        Challenge by
+      <p class="mt-4 text-md text-center text-text font-bold">
+        Colors by
         <a 
-          href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ" 
+          href="https://catppuccin.com/palette/" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="font-bold text-green"
-        >Frontend Mentor</a>. 
-        Coded by
-        <a 
-          href="https://github.com/pinkpuuma?tab=repositories" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          class="font-bold text-green"
-        >pinkpuuma</a>.
+          class="font-extrabold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent"
+        >Catppuccin</a>. 
       </p>
     </div>
   </footer>

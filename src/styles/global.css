@@ -3,12 +3,16 @@
 
 @theme {
   /* colors */ 
-  --color-black: hsl(0 0% 8%);
-  --color-grey: hsl(0 0% 12%);
-  --color-light-grey: hsl(0 0% 20%);
-  --color-green: hsl(75 94% 57%);
+  --color-primary: hsl(316 72% 86%);
+  --color-secondary: hsl(115 54% 76%);
+  --color-accent: hsl(199 76% 69%);
+  --color-base: hsl(240 21% 15%);
+  --color-mantle: hsl(240 21% 12%);
+  --color-text: hsl(226 64% 88%);
+  --color-subtext: hsl(228 24% 72%);
+  --color-subtext2: hsl(237 16% 23%);
+  --color-crust: hsl(240 23% 9%);
 
   /* fonts */ 
   --font-brand: "Inter", sans-serif;
 }
-
